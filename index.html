@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <button class="exit-button" onclick="window.location.href='home.html'">Home</button>
+
+    <div id="choice-modal" class="modal">
+        <div class="modal-content">
+            <h2>Who should play first?</h2>
+            <button class="modal-button" onclick="startGame(true)">You</button>
+            <button class="modal-button" onclick="startGame(false)">AI</button>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <h1 id="hd">Tic Tac Toe</h1>
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+            <p id="msg"></p>
+        </div>
+
+        <div class="msg-container hide">
+            <p id="msg"></p>
+            <button id="new-btn">New Game</button>
+        </div>
+        <div id="winner-status">
+            <h3 id="winner-msg"></h3>
+        </div>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

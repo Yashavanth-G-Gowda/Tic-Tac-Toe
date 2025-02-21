@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #5e548e;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    height: 100vh;
+}
+
+h1 {
+    color: #e0b1cb;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.exit-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.exit-button:hover {
+    color: #e0b1cb;
+}
+
+.container {
+    margin-top: 30px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vh;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #e0b1cb;
+    background-color: #231942;
+}
+
+#new-btn {
+    margin: 30px;
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #231942;
+    border-radius: 1rem;
+    border: none;
+    color: #fff;
+}
+
+#msg {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #231942;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: #e0b1cb;
+}
+
+.modal-button {
+    margin: 10px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #e0b1cb;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #231942;
+}
+
+.modal-button:hover {
+    background-color: #fff;
+}
